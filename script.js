@@ -159,3 +159,12 @@ const squareSum = (arr) => {
   console.log(sum);
 };
 squareSum([1, 2, 2]);
+
+// all first letter toupperCase
+const firstWordConverter = (str) => {
+  const words = str.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].substring(1);
+  }
+  return words.join(" ");
+};
