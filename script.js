@@ -18,3 +18,32 @@ const findAverage = (arr) => {
   console.log(arr.length === 0 ? 0 : newMeaning / arr.length);
 };
 findAverage([]);
+
+// Trolls are attacking your comment section!
+
+// A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+// Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+// For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+// Note: for this kata y isn't considered a vowel.
+
+// vowels a o u i e
+
+const findVowels = (str) => {
+  let vowels = /[aeiou]/gi;
+  console.log(str.replace(vowels, ""));
+};
+const findVowels2 = (str) => {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+    if (!"aeiouAEIOU".includes(char)) {
+      result += char;
+    }
+  }
+  console.log(result);
+};
+findVowels("blabla bleeee");
+findVowels2("blabla bleee");
