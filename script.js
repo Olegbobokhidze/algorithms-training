@@ -113,11 +113,18 @@ seriesSum(1);
 
 // return 2 minimum number from array and sum them
 
-const sumTwoSmallest = (arr) => {
-  const min = Math.min(...arr);
-  const id = arr.indexOf(min);
-  const deletingMin = arr.splice(id, 1);
-  const min2 = Math.min(...arr);
-  console.log(min + min2);
+const sumTwoSmallest = (numbers) => {
+  numbers.sort((a, b) => a - b);
+  console.log(numbers[0] + numbers[1]);
 };
 sumTwoSmallest([5, 5, 4, 10]);
+// You get an array of numbers, return the sum of all of the positives ones.
+const sumPositives = (arr) => {
+  let result = [];
+  arr.forEach((val) => {
+    return val > 0 ? result.push(val) : null;
+  });
+  const sum = result.reduce((acc, curr) => acc + curr, 0);
+  console.log(sum);
+};
+sumPositives([1, -3, 4, -5, 3]);
