@@ -54,3 +54,31 @@ const getStringFromArr = (arr) => {
   console.log(arr.join(" "));
 };
 getStringFromArr(["bla", "blue", "blee"]);
+
+// Create a function with two arguments that will return an array of the first n multiples of x.
+
+// Assume both the given number and the number of times to count will be positive numbers greater than 0.
+
+// Return the results as an array or list ( depending on language ).
+
+const countBy = (a, b) => {
+  let lastNumber = a * b;
+  let result = [];
+  for (let i = a; i <= lastNumber; i++) {
+    if (i % a === 0) {
+      result.push(i);
+    }
+  }
+  console.log(result);
+};
+countBy(2, 5);
+
+// [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+
+const returnMultiply = (arr) => {
+  const Array = arr.reduce((acc, curr) => {
+    return acc * curr;
+  }, 1);
+  console.log(Array);
+};
+returnMultiply([4, 1, 1, 1, 4]);
