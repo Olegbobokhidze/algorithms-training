@@ -96,3 +96,17 @@ const EvenOrOdd = (number) => {
   console.log(number % 2 === 0 ? "Even" : "Odd");
 };
 EvenOrOdd(10);
+
+// Series: 1 + 1/4 + 1/7 + 1/10 + 1/13 + 1/16 +...
+
+const seriesSum = (n) => {
+  if (n === 0) {
+    return "0.00";
+  }
+  let sum = 0;
+  for (let i = 0; i < n; i++) {
+    sum += 1 / (1 + 3 * i);
+  }
+  console.log(sum.toFixed(2));
+};
+seriesSum(1);
