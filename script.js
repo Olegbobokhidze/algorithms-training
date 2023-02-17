@@ -82,3 +82,10 @@ const returnMultiply = (arr) => {
   console.log(Array);
 };
 returnMultiply([4, 1, 1, 1, 4]);
+
+// dragons slayer
+
+const dragonSlayer = (bullet, dragons) => {
+  console.log(bullet >= dragons * 2 ? true : false);
+};
+dragonSlayer(100, 40);
