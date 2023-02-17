@@ -151,3 +151,11 @@ const calculateBMI = (weight, height) => {
     return "Obese";
   }
 };
+
+// Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+const squareSum = (arr) => {
+  const sum = arr.reduce((acc, curr) => acc + Math.pow(curr, 2), 0);
+  console.log(sum);
+};
+squareSum([1, 2, 2]);
