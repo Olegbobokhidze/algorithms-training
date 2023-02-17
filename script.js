@@ -89,3 +89,10 @@ const dragonSlayer = (bullet, dragons) => {
   console.log(bullet >= dragons * 2 ? true : false);
 };
 dragonSlayer(100, 40);
+
+// Even or Odd ??
+
+const EvenOrOdd = (number) => {
+  console.log(number % 2 === 0 ? "Even" : "Odd");
+};
+EvenOrOdd(10);
