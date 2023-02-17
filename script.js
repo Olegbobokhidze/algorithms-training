@@ -110,3 +110,14 @@ const seriesSum = (n) => {
   console.log(sum.toFixed(2));
 };
 seriesSum(1);
+
+// return 2 minimum number from array and sum them
+
+const sumTwoSmallest = (arr) => {
+  const min = Math.min(...arr);
+  const id = arr.indexOf(min);
+  const deletingMin = arr.splice(id, 1);
+  const min2 = Math.min(...arr);
+  console.log(min + min2);
+};
+sumTwoSmallest([5, 5, 4, 10]);
